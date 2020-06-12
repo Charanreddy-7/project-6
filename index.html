@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+
+<!-- ICONS -->
+  <div class="pill-social" style="font-family: Arial, Helvetica, sans-serif bold;" >
+    <i class="fa fa-facebook" style="width: 30px; text-align: right;"><a href="#home"></a></i>
+    <i class="fa fa-twitter"><a href="#home"></a></i>
+    <i class="fa fa-instagram"><a href="#home"></a></i>
+    <i class="fa fa-telegram"><a href="#home"></a></i>
+    
+    
+  </div>
+<!-- NAV BAR -->
+<div id="myNav" class="overlay">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+   <a href="login.html" >Login</a>
+   <a href="#">About</a>
+   <a href="#">Services</a>
+   <a href="#">Contact</a>
+ </div>
+</div>
+
+<span style="font-size:60px;cursor:pointer; color:black; top: 15px;left: 30px;box-sizing: border-box; position: fixed;z-index: 1;" onclick="openNav()">&#9776; </span>
+
+
+<div >
+  <img src="images/big3.jpg" alt="" style="width: 1350px; background-size: cover;position: absolute;top: 700px; ">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi modi impedit voluptatum, ipsum, expedita, eaque suscipit delectus nulla accusamus nam dolor dolorum aliquid ratione nihil. Atque natus sunt amet officia pariatur magnam nostrum, ab alias obcaecati aliquid temporibus, dolor rerum earum eaque nesciunt. Dolor molestiae maxime itaque, eius quidem repellendus illum quas, et exercitationem sunt tenetur architecto ratione ipsum culpa doloremque deleniti tempore error recusandae? <!--<span id="dots" >....</span><span id="more"> -->Labore et dolorum sed deserunt maxime earum. Nisi, natus quam molestiae beatae laboriosam, nam nesciunt id, nihil sequi alias incidunt eos explicabo odio aliquam temporibus quo aspernatur! Maxime eos deserunt eveniet. Expedita sit voluptas dolor. Quod reiciendis architecto odit fugit beatae, explicabo labore hic pariatur repellat aspernatur natus quasi quas harum ducimus, inventore, impedit ratione facilis commodi minima. Et repudiandae, tenetur eligendi impedit veniam perferendis quia quas maiores ratione odio hic, magni praesentium quod iure nam? Beatae accusantium quis eligendi aperiam tempore non! Pariatur suscipit deserunt rem vel nesciunt velit natus maxime aliquam est dolorem, reprehenderit asperiores quasi assumenda praesentium a sint possimus vero ab sunt labore. Id, illo nemo? Mollitia impedit veniam praesentium! Quis quam temporibus maxime amet, architecto fugit soluta perferendis aperiam rerum vitae excepturi ut ducimus quo minima magni harum. Qui quos est harum quia, minus ullam veritatis dolore cumque vel doloribus eligendi omnis dolorum quibusdam blanditiis magnam illo maiores iure quod accusamus incidunt! Sit doloremque nam dolor? Itaque nostrum ab hic, facilis repudiandae porro laborum accusamus expedita nihil laudantium eum harum rerum maxime doloremque corrupti, aperiam dicta, quasi vero quas quidem!<!--</span></p>
+ <button onclick="myFunction()" id="readBtn" >Read more</button> -->
+</div>
+ 
+
+<div   >
+  <div class="flip-card">
+    <div class="flip-card-inner"style="border-radius: 15px;">
+      <div class="flip-card-front"style="border-radius: 15px;">
+        <img src="images/img3.jpg" alt="Avatar" style="width:300px;height:300px; border-radius: 15px;">
+      </div>
+      <div class="flip-card-back"style="border-radius: 15px;">
+        <h1> Chiru and Charan</h1> 
+        <p style="color: black;"> Creaters</p> 
+        <p>  </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+scroll button
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+</div>
+
+
+<!-- SCRIPT -->
+
+<script>
+ function openNav() {
+   document.getElementById("myNav").style.height = "100%";
+ }
+ 
+ function closeNav() {
+   document.getElementById("myNav").style.height = "0%";
+ }
+//  READ MORE SCRIPT
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+// Scroll button
+
+// Get the button
+var scrollbutton = document.getElementById("scrollBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollbutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+ </script>
+      
+</body>
+</html>
